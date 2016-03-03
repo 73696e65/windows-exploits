@@ -1,0 +1,7 @@
+// generic_send_tcp 192.168.80.157 6666 fuzz.spk 0 0
+
+s_string("GMON");
+s_string(" ");
+s_string_variable("x");
+s_string("\n");
+s_readline();

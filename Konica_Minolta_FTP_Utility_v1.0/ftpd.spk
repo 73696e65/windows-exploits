@@ -1,0 +1,14 @@
+// syntax: strace -f -s 65536 -o strace.log generic_send_tcp 192.168.80.151 21 ftpd.spk 0 0
+
+s_string("USER");
+s_string(" ");
+s_string("anonymous");
+s_string("\n");
+
+s_string("PASS ");
+s_string("anonymous");
+s_string("\n");
+
+s_string("CWD ");
+s_string_variable(".");
+s_string("\n");
